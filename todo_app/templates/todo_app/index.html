@@ -230,10 +230,8 @@
                                 id="exampleCustomCheckbox{{each_todo.id}}"
                                 type="checkbox"
                                 disabled
-                                {%
-                                if
-                                each_todo.completed%}
-                                checked
+                                {% if each_todo.completed%}
+                                  checked
                                 {%endif%}
                               /><label
                                 class="custom-control-label"
